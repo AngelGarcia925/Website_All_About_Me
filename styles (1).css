@@ -1,0 +1,184 @@
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  background-color: rgb(243, 243, 194);
+  display: flex;
+  height: 300%;
+}
+.header {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, .75);
+  right: 0;
+  left: 0;
+  bottom: 95%;
+  z-index: 1;
+  flex: 100%;
+}
+.parent1 {
+  position: absolute;
+  display: flex;
+  flex: 50%;
+  z-index: 1;
+  top: 5%;
+  right: 50%;
+  left: 0;
+  bottom: 50%;
+  vertical-align: top;
+  margin-bottom: 5%;
+}
+.background {
+  position: absolute;
+  display: contents;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 40%;
+  width: 0;
+  z-index: -1;
+}
+.child1 {
+  position: relative;
+  flex: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+  z-index: 3;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  contain: content;
+  margin-bottom: 2%;
+  overflow: auto;
+  scrollbar-width: none;
+
+}
+.Textbox1 {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 5%;
+  bottom: 0;
+  width: 72.5%;
+  cursor: pointer;
+  contain: content;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  text-align: left;
+  transition: transform .3s ease-in-out;
+  word-wrap: break-word;
+  padding: 0;
+  opacity: .5;
+  z-index: 4;
+  color: rgb(189, 187, 187);
+}
+
+.Textbox1:hover {
+  color: whitesmoke;
+  opacity: 1;
+  width: 75%;
+  transform: translateX(13%) translateY(10%) scale(1.25);
+  z-index: 4;
+  word-wrap: break-word;
+}
+.parent2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.box2 {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  flex: 100%;
+  display: flex;
+  flex-direction: row;
+  max-height: 50%;
+  z-index: 4;
+  column-gap: 2.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contents1 {
+  position: relative;
+  flex: 33%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  text-align: left;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: rgb(189, 187, 187);
+  background-color:rgba(0, 0, 0, .75);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.contents1 > p {
+  position: relative;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+}
+.contents1:hover {
+  transform: translateY(-10px);
+  color: antiquewhite;
+  outline-width: 2px;
+  outline-color: blueviolet;
+  outline-style: solid;
+}
+.contents3 {
+  position: relative;
+  flex: 33%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(34, 199, 144);
+}
+.contents2 {
+  position: relative;
+  flex: 33%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(34, 199, 144);
+  border-radius: 10px;
+}
+.contents4 {
+  position: relative;
+  flex: 33%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(34, 199, 144);
+  border-radius: 10px;
+}
